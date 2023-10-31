@@ -6,7 +6,7 @@
 /*   By: mbartos <mbartos@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:01:51 by mbartos           #+#    #+#             */
-/*   Updated: 2023/10/31 16:13:38 by mbartos          ###   ########.fr       */
+/*   Updated: 2023/10/31 16:18:59 by mbartos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main (void)
 	char	*nic;
 
 	nic = str;
-	ft_printf("Ahoj %p %x %X %u %d %d %s %% %s %c \naaaa.", nic, -300, -300, -15, 3, 5, "NE", "%", 99);
+	ft_printf("Ahoj %p %x %X %u %d %s %% %s %c \naaaa.", nic, -300, -300, -15, 3, "NE", "%", 99);
 	printf("\n");
-	printf("Ahoj %p %x %X %u %d %d %s %% %s %c \naaaa.", nic, -300, -300, -15, 3, 5, "NE", "%", 99);
+	printf("Ahoj %p %x %X %u %d %s %% %s %c \naaaa.", nic, -300, -300, -15, 3, "NE", "%", 99);
 }
