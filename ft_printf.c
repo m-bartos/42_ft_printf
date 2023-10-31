@@ -6,7 +6,7 @@
 /*   By: mbartos <mbartos@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 11:07:53 by mbartos           #+#    #+#             */
-/*   Updated: 2023/10/31 16:07:30 by mbartos          ###   ########.fr       */
+/*   Updated: 2023/10/31 16:49:27 by mbartos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,19 +44,25 @@ void	ft_print_type(char type, va_list args)
 int	ft_printf(const char *str, ...)
 {
 	va_list	args;
+	int		sum;
 
 	va_start(args, str);
+	sum = 0;
 	while (*str)
 	{
 		if (*str != '%')
+		{
 			ft_putchar(*str);
+			sum++;			
+		}
 		else
 		{
 			ft_print_type(*(str + 1), args);
+			//adding to sum
 			str++;
 		}
 		str++;
 	}
 	va_end(args);
-	return (0);
+	return (sum);
 }
