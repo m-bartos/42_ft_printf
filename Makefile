@@ -4,7 +4,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-SOURCES = ft_printf.c ft_putchar.c ft_puthexa.c ft_putnbr.c ft_putstr.c ft_putunsnbr.c ft_strdup.c ft_strlen.c
+SOURCES = ft_printf.c ft_type_choose.c ft_putchar_c.c ft_puthexa.c ft_strlcpy.c ft_putpointer.c ft_putnbr.c ft_putstr_c.c ft_putunsnbr.c ft_strlen.c
 
 MY_OBJECTS = $(SOURCES:.c=.o)
 
@@ -25,4 +25,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, bonus, clean, fclean, re
+.PHONY: all, clean, fclean, re
