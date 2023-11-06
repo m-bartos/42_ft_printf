@@ -6,13 +6,13 @@
 /*   By: mbartos <mbartos@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 09:53:00 by mbartos           #+#    #+#             */
-/*   Updated: 2023/11/01 13:45:55 by mbartos          ###   ########.fr       */
+/*   Updated: 2023/11/06 13:38:27 by mbartos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_put_ptr_hexa_adress(unsigned long number, int *ptr_sum)
+void	ft_put_ptr_hexa_adress(uintptr_t number, int *ptr_sum)
 {
 	char	base[17];
 
@@ -34,5 +34,5 @@ void	ft_putpointer(void *ptr, int *ptr_sum)
 		return ;
 	}
 	ft_putstr_c("0x", ptr_sum);
-	ft_put_ptr_hexa_adress((unsigned long) ptr, ptr_sum);
+	ft_put_ptr_hexa_adress((uintptr_t) ptr, ptr_sum);
 }

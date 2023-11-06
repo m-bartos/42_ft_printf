@@ -6,7 +6,7 @@
 /*   By: mbartos <mbartos@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 11:09:26 by mbartos           #+#    #+#             */
-/*   Updated: 2023/11/01 13:49:45 by mbartos          ###   ########.fr       */
+/*   Updated: 2023/11/06 13:36:38 by mbartos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr(int n, int *ptr_sum);
 void	ft_putunsnbr(unsigned int n, int *ptr_sum);
 void	ft_puthexa(unsigned int n, char hex_base, int *ptr_sum);
 void	ft_putpointer(void *ptr, int *ptr_sum);
-void	ft_put_ptr_hexa_adress(unsigned long number, int *ptr_sum);
+void	ft_put_ptr_hexa_adress(uintptr_t number, int *ptr_sum);
 void	ft_putstr_c(char *s, int *ptr_sum);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
